@@ -99,7 +99,7 @@ class Genesis_Hero {
 			$title = get_the_title( get_option( 'woocommerce_shop_page_id' ) );
 
 		} elseif ( 'posts' === get_option( 'show_on_front' ) && is_home() ) {
-			$title = __( 'Latest Posts', 'legal-pro' );
+			$title = __( 'Latest Posts', 'genesis-hero' );
 
 		} elseif ( is_front_page() && ! is_home() ) {
 			$title = get_the_title( get_option( 'page_on_front' ) );
@@ -123,10 +123,10 @@ class Genesis_Hero {
 			$title = genesis_do_blog_template_heading();
 
 		} elseif ( is_search() ) {
-			$title = __( 'Search Results', 'legal-pro' );
+			$title = __( 'Search Results', 'genesis-hero' );
 
 		} elseif ( is_404() ) {
-			$title = __( 'Page not found!', 'legal-pro' );
+			$title = __( 'Page not found!', 'genesis-hero' );
 
 		} else {
 			$title = get_the_title();
@@ -156,7 +156,7 @@ class Genesis_Hero {
 			$subtitle = get_the_excerpt( get_option( 'woocommerce_shop_page_id' ) );
 
 		} elseif ( 'posts' === get_option( 'show_on_front' ) && is_home() ) {
-			$subtitle = __( 'Showing the latest posts', 'legal-pro' );
+			$subtitle = __( 'Showing the latest posts', 'genesis-hero' );
 
 		} elseif ( is_author() ) {
 			$subtitle = get_the_author_meta( 'intro_text', (int) get_query_var( 'author' ) );
